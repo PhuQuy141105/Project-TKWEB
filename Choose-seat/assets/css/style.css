@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+body, h1, h2, h3,h4, p, div, select, input {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+html{
+    background-color: #000336;
+    font-family: Poppins;
+}
+/* Logo ảnh */
+.logo-brand {
+    width: 200px;
+    user-select: none;
+}
+
+/* Header */
+header {
+    background-color:#000336;
+    position: sticky;
+    top: -5px;
+    left: 0px;
+    width: 100%;
+    height: 160px;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+/* Navigation */ 
+nav {
+    margin-left: auto;
+    display: flex;
+    position: relative;
+}
+.nav a {
+    position: relative;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding-left: 40px;
+    z-index: 2;
+    margin-top: 18px
+}
+/* Hiệu ứng cho phần navigation */
+.nav a:nth-child(1):hover~span {
+    left: 0;
+}
+.nav a:nth-child(2):hover~span {
+    left: 103px;
+    width: 99.97px;
+}
+
+.nav a:nth-child(2):hover {
+   background-clip: text;
+   color: transparent;
+   background-color: #8EC5FC;
+   background-image: linear-gradient(307deg, #8EC5FC 0%, #E0C3FC 50%, #f5ed66 100%);
+   font-weight: 600;
+}
+
+.nav a:nth-child(3):hover~span {
+    left: 207px;
+    width: 84.97px;
+}
+
+.nav a:nth-child(3):hover {
+   color: transparent;
+   background-clip: text;
+   background-color: #8EC5FC;
+   background-image: linear-gradient(307deg, #8EC5FC 0%, #E0C3FC 50%, #f5ed66 100%);
+   font-weight: 600;
+}
+.nav a:nth-child(4):hover~span {
+    left: 296px;
+    width: 92.97px;
+}
+
+.nav a:nth-child(4):hover {
+    color: transparent;
+    background-clip: text;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(307deg, #8EC5FC 0%, #E0C3FC 50%, #f5ed66 100%);
+    font-weight: 600;
+}
+/* Tạo thanh trượt cho phần navigation */
+.nav span {
+    padding-bottom: 50px;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: 80px;
+    height: 39px;
+    border-radius: 8px;
+    background-color: #57acdf;
+    background-image: linear-gradient(160deg, #57acdf 0%, #162265 100%);
+    transition: .5s ease;
+}
+/* Nút login  */
+.nav .btn-login {
+    width: 100px;
+    height: 42px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 530;
+    margin: 4px 0 0 40px;
+    transition: 0.5s;
+    z-index: 1;
+    transition: 0.5s;
+    font-weight: 500;
+}
+
+.nav .btn-login:hover {
+    background-color: #57acdf;
+    background-image: linear-gradient(160deg, #57acdf 0%, #162265 100%);
+}
+
+/* Man hinh*/
+section.Booking{
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    padding-bottom: 15px;
+    
+}
+div.screen{
+    background-color: #f5f5f5;
+}
+div.screen#screen{
+    background-color: #000336;
+}
+div.content{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+/* Danh sach ghe*/
+div.chair{
+    width: 50px;
+    height: 50px;
+    background-color: #232a31;
+    border-radius: 15px;
+    text-align: center;
+    display: inline-block !important;
+    padding: 10px;
+    margin: 5px;
+}
+.chair.DaDat {
+    background-color: #232a31;
+    cursor: not-allowed;
+    /* Đảm bảo rằng chiều cao và vị trí giống với các ghế khác */
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+}
+div.H  div.chair{
+    background-color: #ff0b26 ;
+}
+
+div.chair span{
+    color: #fff; 
+}
+
+div.chair:hover {
+    transform: translateY(-10px);
+    span{
+        color: #333;
+    }
+    background-color: #fff;
+    cursor: pointer;
+}
+
+/* Ghi CHU*/
+div.note{
+
+    margin-top: 1rem;
+}
+
+.note p {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+div.note .chair:hover{
+    cursor: default;
+    transform: none;
+}
+div.note ul{
+    list-style-type: none;
+
+}
+div.note.flex{
+    justify-content: center;
+    align-items: center;
+}
+div.note ul >li{
+    padding: 2rem;
+}
+div.note > ul li:last-child div{
+    background-color: #ff0b26;
+}
+/* Ghi CHU*/
+i {
+    color: #697280; /* Ví dụ: Đổi màu chữ thành đen */
+    font-size: 27px; /* Ví dụ: Đổi kích thước chữ */
+    font-style: italic; /* Ví dụ: Đổi kiểu chữ thành in nghiêng */
+    margin: 0 5px; /* Ví dụ: Thêm khoảng cách bên trái và bên phải */
+}
+.VIP{
+    background-color: #ff7c00 !important;
+    position: relative;
+    left: 5px;
+}
+.DaChon{
+    background-color: #0084f6 !important;
+    position: relative;
+    /* left: 20px; */
+}
+.Doi{
+    background-color: #ff0b26 ;
+    position: relative;
+    left: 20px;
+}
+.GheTrong{
+    background-color: #232a31;
+}
+.DaDat{
+    background-color: #212a31;
+    cursor: not-allowed; 
+}
+.DaDat:hover {
+    background-color: #212a31 !important; /* Giữ nguyên màu nền khi hover */
+}
+div.CalMoney{
+    margin-top: 0.2rem;
+    display: flex;
+    justify-content: space-between;
+}
+div.left{
+   margin-left: 15%;
+}
+div.right{
+    margin-right: 15%;
+}
+
+#back-button i {
+    font-size: 20px;
+    color: #000336;
+}
+
+#pay-button i {
+    font-size: 20px;
+    color: #000336;
+}
+
+#pay-button:hover,#back-button:hover {
+    transform: translateY(-20px);
+    box-shadow: rgba(244, 243, 243, 0.595) 0px 54px 55px, rgba(255, 255, 255, 0.727) 0px -12px 30px, rgb(202, 216, 231) 0px 4px 6px, rgb(117, 132, 243) 0px 12px 13px, rgb(255, 255, 255) 0px -3px 5px;
+}
+/* Tinh Tien*/
+div.CalMoney a {
+    text-decoration: none;
+    background-color: white;
+    color: #000336;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    position: right;
+    font-size: 16px;
+    font-weight: bolder;
+    margin-left: 20px;
+}
+
+.CalMoney p {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 38px;
+}
+/* Nut thanh toan*/
