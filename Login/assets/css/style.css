@@ -1,0 +1,318 @@
+* { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,body {
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family:"Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('../img/background-1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+/* Logo ảnh */
+.logo-brand {
+    position: absolute;
+    width: 200px;
+    user-select: none;
+    margin-top: 61px
+}
+/* Header */
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Navigation */ 
+nav {
+    margin-left: 700px;
+    display: flex;
+    position: relative;
+}
+.nav a {
+    position: relative;
+    font-size: 1.4rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding-left: 40px;
+    z-index: 1;
+    margin-top: 18px
+}
+/* Hiệu ứng cho phần navigation */
+.nav a:nth-child(1):hover~span {
+    left: 0;
+}
+.nav a:nth-child(2):hover~span {
+    left: 103px;
+    width: 99.97px;
+}
+
+.nav a:nth-child(2):hover {
+   background-clip: text;
+   color: transparent;
+   background-color: #8EC5FC;
+   background-image: linear-gradient(307deg, #8EC5FC 0%, #E0C3FC 50%, #f5ed66 100%);
+   font-weight: 600;
+}
+
+.nav a:nth-child(3):hover~span {
+    left: 207px;
+    width: 84.97px;
+}
+
+.nav a:nth-child(3):hover {
+   color: transparent;
+   background-clip: text;
+   background-color: #8EC5FC;
+   background-image: linear-gradient(307deg, #8EC5FC 0%, #E0C3FC 50%, #f5ed66 100%);
+   font-weight: 600;
+}
+.nav a:nth-child(4):hover~span {
+    left: 296px;
+    width: 92.97px;
+}
+
+.nav a:nth-child(4):hover {
+    color: transparent;
+    background-clip: text;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(307deg, #8EC5FC 0%, #E0C3FC 50%, #f5ed66 100%);
+    font-weight: 600;
+}
+/* Tạo thanh trượt cho phần navigation */
+.nav span {
+    padding-bottom: 50px;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: 80px;
+    height: 39px;
+    border-radius: 8px;
+    background-color: #57acdf;
+    background-image: linear-gradient(160deg, #57acdf 0%, #162265 100%);
+    transition: .5s ease;
+}
+/* Nút login  */
+.nav .btn-login {
+    width: 100px;
+    height: 42px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.4rem;
+    color: #fff;
+    font-weight: 530;
+    margin: 4px 0 0 40px;
+    transition: 0.5s;
+    z-index: 1;
+    transition: 0.5s;
+    font-weight: 500;
+}
+
+.nav .btn-login:hover {
+    background-color: #57acdf;
+    background-image: linear-gradient(160deg, #57acdf 0%, #162265 100%);
+}
+/* Wrapper chung cho register và login */
+.wrapper i {
+    color: white;
+}
+.wrapper .form-box h2 {
+    font-size: 3rem;
+    margin-bottom: 7px;
+    font-weight: 800;
+    color: white;
+    text-align: center;
+}
+.wrapper {
+    /* background:red; */
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transform: scale(0);
+    transition: transform 0.4s ease,height 0.4s ease;
+}
+
+/* Khi ng dùng nhấn nút Login ở navbar => wrapper xuất hiện */
+.wrapper.appear {
+    transform: scale(1);
+}
+
+/* Khi ng dùng nhấn nút register => wrapper bị thay đổi height */
+.wrapper.on {
+    height: 520px;
+}
+
+.wrapper .form-box {
+    width: 100%;
+    padding: 40px;
+}
+
+.form-box .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid white;
+    margin: 30px 0;
+}
+
+.form-box .input-box label {
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1.4rem;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.form-box .input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+}
+/* Thiết lập Jquery */
+.form-box .input-box label.on {
+    top: -5px;
+    font-size: 1.4rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+.form-box .input-box .icon {
+    position: absolute;
+    right: 8px;
+    font-size: 1.5rem;
+    line-height: 57px;
+}
+/* Nút Remember me */
+.remember-forgot {
+    font-size:  1.2rem;
+    color: white;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember-forgot a {
+    text-decoration: none;
+    color: white;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+/* Nút login */
+ .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    color: #002b47;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    font-weight: 400;
+}
+/* Phần nếu chưa có tk, nhấn để đki */
+.login-register {
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.3rem;
+    margin-top: 40px
+}
+
+.login-register .register-link {
+    text-decoration: none;
+    color: white;
+}
+
+.login-register .register-link:hover {
+    text-decoration: underline;
+}
+/* Close-icon */
+.wrapper .close-icon i {
+    color:#002b47
+}
+
+.wrapper .close-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 20px 0 20px;
+    cursor: pointer;
+}
+
+/* Form-box Login */ 
+.wrapper .form-box.login {
+    transition: transform 0.18s ease;
+    transform: translateX(0);
+}
+.wrapper.on .form-box.login {
+    transition: none;
+    transform: translateX(-400px);
+}
+
+ /* Form-box Register */
+.wrapper .form-box.register { 
+    position: absolute;
+    transition: none;
+    transform: translateX(400px);
+}
+
+.wrapper.on .form-box.register { 
+    transition: transform 0.18s ease;
+    transform: translateX(0px);
+}
+
+/* Nút login của form register */
+.login-register .login-link {
+    text-decoration: none;
+    color: white;
+}
+
+.login-register .login-link:hover {
+    text-decoration: underline;
+}
