@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Reset CSS -->
+     <link rel="stylesheet" href="./assets/css/reset.css">
+    <!-- Style CSS -->
+     <link rel="stylesheet" href="./assets/css/style.css">
+     <!-- Favicon -->
+    <link rel="icon" href="./assets/img/logo.png" >
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Icon -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" >
+    <title>RẠP PHIM WUYSNOAT</title>
+</head>
+<body>
+      <!-- Lớp mờ (Overlay) -->
+      <div class="overlay"></div>
+    <!-- Header -->
+    <header class="header">
+        <img src="./assets/img/logo_transparent.png" alt="logo WUYSNOAT" class="logo-brand">
+        <!-- Navigation -->
+        <nav class="nav">
+            <a href="#!" target="_blank">Home</a>
+            <a href="#!">About Us</a>
+            <a href="#!">Tickets</a>
+            <a href="#!">Contact</a>
+            <span></span>
+            <button class="btn-login"> Login </button>
+        </nav>
+    </header>
+    <!--Small menu -->
+    <div class="small-menu">
+        <input type="checkbox" class="menu-toggle" id="menu-toggle">
+        <div class="space-btn">
+            <span class="top-line common"></span>
+            <span class="middle-line common"></span>
+            <span class="bottom-line common"></span>
+        </div>
+        <div class="slide">
+                <h2>MENU</h2>
+                <ul>
+                    <li>
+                        <a href="#film-showing">
+                            <i class="fa-solid fa-tv"></i>
+                            PHIM ĐANG CHIẾU
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#film-upcoming">
+                            <i class="fa-solid fa-tv"></i>
+                            PHIM SẮP CHIẾU
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#film-corner">
+                            <i class="fa-regular fa-user"></i>
+                            GÓC ĐIỆN ẢNH
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#film-ad">
+                            <i class="fa-solid fa-person-breastfeeding"></i>
+                            TIN KHUYẾN MÃI 
+                        </a>
+                    </li>
+                </ul>
+        </div>
+    </div>
+    <!-- Ảnh trượt -->
+    <div class="picture-wrapper">
+        <div class="picture-container">
+       
+            <img src="./assets/img/picture-film -1.jpg" alt="film-1" class="picture picture-1">
+            <img src="./assets/img/picture-film-2.jpg" alt="film-2" class="picture picture-2">
+            <img src="./assets/img/picture-film-3.jpg" alt="film-3" class="picture picture-3">
+            <img src="./assets/img/picture-film-4.jpg" alt="film-4" class="picture picture-4">
+        
+        </div>
+        <div class="picture-container">
+                <img src="./assets/img/picture-film -1.jpg" alt="film-1" class="picture picture-1">
+                <img src="./assets/img/picture-film-2.jpg" alt="film-2" class="picture picture-2">
+                <img src="./assets/img/picture-film-3.jpg" alt="film-3" class="picture picture-3">
+                <img src="./assets/img/picture-film-4.jpg" alt="film-4" class="picture picture-4">
+        </div>
+    </div>
+    <!-- Khung phim đang chiếu -->
+    <div class="films-selection film-selection-1">
+        <div class="film-searcher">
+           <div class="film-genre">
+                <span> 
+                    <span class="line">|</span>
+                    PHIM
+                </span>
+                <span>Đang chiếu</span>
+           </div>
+           <div class="search-box">
+                <input type="text" class="search-bar search-bar-1" placeholder="Search me">
+                <button class="button-1">Search</button>
+                <span class="button-search"><i class="fa-solid fa-magnifying-glass"></i></span>
+           </div>
+        </div>
+        <!-- Các ô phim -->
+        <div class="films" id="film-showing">
+            <!-- Phần tử phim 1 -->
+            <div class="film-item" >
+                <h2>Vụ Bê Bối Ánh Trăng</h2>
+                <img src="./assets/img/film-1.jpg" alt="film-1" class="film-card">
+                <div class="overlay-img"></div>
+                <a href="../Film-information/Film-1/Film1-1/film1.html" class="book-ticket">
+                    <i class="fa-solid fa-ticket"></i>
+                    Booking Ticket
+                </a>
+                <a href="#!" class="trailer trailer-1">
+                    <i class="fa-solid fa-video"></i>
+                    Watch Trailer
+                </a>
+                <div class="film-info"></div>
+            </div>
+            <!-- Video của phần tử phim 1 close-icon-1 -->
+            <div class="video-items">
+                <div class="overlay-video"></div>
+                <div class="video-item">
+                    <a href="#!" class="close-icon close-icon-1">
+                        <i class="fa-solid fa-x"></i>
+                    </a>
+                    <iframe class="video-1" width="560" height="315" src="https://www.youtube.com/embed/i2MO-YtH0Ik?si=Z9ial5YrmI-okVAi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <!-- Phần tử phim 2 -->
+            <div class="film-item">
+                <h2>Chạy Đua Với Tử Thần</h2>
+                <img src="./assets/img/film-2.jpg" alt="film-2" class="film-card">
+                <div class="overlay-img"></div>
+                <a href="../Film-information/Film-1/Film-2/film2.html" class="book-ticket">
+                    <i class="fa-solid fa-ticket"></i>
+                    Booking Ticket
+                </a>
+                <a href="#!" class="trailer trailer-2">
+                    <i class="fa-solid fa-video"></i>
+                    Watch Trailer
+                </a>
+                <div class="film-info"></div>
+            </div>
+            <!-- Video của phần tử phim 2 -->
+            <div class="video-items">
+                <div class="overlay-video"></div>
+                <div class="video-item">
+                    <a href="#!" class="close-icon close-icon-2">
+                        <i class="fa-solid fa-x"></i>
+                    </a>
+                    <iframe class="video-2" width="560" height="315" src="https://www.youtube.com/embed/PCuYtJV4fgs?si=KkiRudfy_-qXDR9N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <!-- Phần tử phim 3 -->
+            <div class="film-item">
+                <h2>Deadpool & Wolverine</h2>
+                <img src="./assets/img/film-3.jpg" alt="film-3" class="film-card">
+                <div class="overlay-img"></div>
+                <a href="../Film-information/Film-1/Film-3/film3.html" class="book-ticket">
+                    <i class="fa-solid fa-ticket"></i>
+                    Booking Ticket
+                </a>
+                <a href="#!" class="trailer trailer-3">
+                    <i class="fa-solid fa-video"></i>
+                    Watch Trailer
+                </a>
+                <div class="film-info"></div>
+            </div>
+            <!-- Video của phần tử phim 3 -->
+            <div class="video-items">
+                <div class="overlay-video"></div>
+                <div class="video-item">
+                    <a href="#!" class="close-icon">
+                        <i class="fa-solid fa-x"></i>
+                    </a>
+                    <iframe class="video-3" width="560" height="315" src="https://www.youtube.com/embed/lW4-A3ZQnVQ?si=xnjxcRH7HZqPyUsq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <!-- Phần tử phim 4 -->
+            <div class="film-item">
+                <h2>Blackpink World Tour [Khởi Nguyên Hồng] </h2>
+                <img src="./assets/img/film-4.jpg" alt="film-4" class="film-card">
+                <div class="overlay-img"></div>
+                <a href="../Film-information/Film-1/Film-4/film4.html" class="book-ticket">
+                    <i class="fa-solid fa-ticket"></i>
+                    Booking Ticket
+                </a>
+                <a href="#!" class="trailer trailer-4">
+                    <i class="fa-solid fa-video"></i>
+                    Watch Trailer
+                </a>
+                <div class="film-info"></div>
+            </div>
+            <!-- Video của phần tử phim 4 -->
+            <div class="video-items">
+                <div class="overlay-video"></div>
+                <div class="video-item">
+                    <a href="#!" class="close-icon">
+                        <i class="fa-solid fa-x"></i>
+                    </a>
+                    <iframe class="video-4" width="560" height="315" src="https://www.youtube.com/embed/5JH9BcLU9IE?si=jivw1YBEYA71gurs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <!-- Phần tử phim 5 -->
+            <div class="film-item">
+                <h2>Đẹp Trai Thấy Sai Sai</h2>
+                <img src="./assets/img/film-5.jpg" alt="film-5" class="film-card">
+                <div class="overlay-img"></div>
+                <a href="../Film-information/Film-1/Film-5/film5.html" class="book-ticket">
+                    <i class="fa-solid fa-ticket"></i>
+                    Booking Ticket
+                </a>
+                <a href="#!" class="trailer trailer-5">
+                    <i class="fa-solid fa-video"></i>
+                    Watch Trailer
+                </a>
+                <div class="film-info"></div>
+            </div>
+            <!-- Video của phần tử phim 5 -->
+            <div class="video-items">
+                <div class="overlay-video"></div>
+                <div class="video-item">
+                    <a href="#!" class="close-icon">
+                        <i class="fa-solid fa-x"></i>
+                    </a>
+                    <iframe class="video-5" width="560" height="315" src="https://www.youtube.com/embed/EVTwhwWY9nY?si=Rj-szgUj8MQWLUcK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <!-- Phần tử phim 6 -->
+            <div class="film-item">
+                <h2>Thám Tử Lừng Danh Conan: Ngôi Sao 5 Cánh 1 Triệu Đô </h2>
+                <img src="./assets/img/film-6.jpg" alt="film-6" class="film-card">
+                <div class="overlay-img"></div>
+                <a href="../Film-information/Film-1/Film-6/film6.html" class="book-ticket">
+                    <i class="fa-solid fa-ticket"></i>
+                    Booking Ticket
+                </a>
+                <a href="#!" class="trailer trailer-6">
+                    <i class="fa-solid fa-video"></i>
+                    Watch Trailer
+                </a>
+                <div class="film-info"></div>
+            </div>
+            <!-- Video của phần tử phim 6 -->
+            <div class="video-items">
+                <div class="overlay-video"></div>
+                <div class="video-item">
+                    <a href="#!" class="close-icon">
+                        <i class="fa-solid fa-x"></i>
+                    </a>
+                    <iframe class="video-6" width="560" height="315" src="https://www.youtube.com/embed/x_gGMJOppAo?si=wMS2LBHNHqqdB6MN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <!-- Phần tử phim 7 -->
+            <div class="film-item">
+                <h2>Ma Cây</h2>
+                <img src="./assets/img/film-7.jpg" alt="film-7" class="film-card">
+                <div class="overlay-img"></div>
+                <a href="../Film-information/Film-1/Film-7/film7.html" class="book-ticket">
+                    <i class="fa-solid fa-ticket"></i>
+                    Booking Ticket
+                </a>
+                <a href="#!" class="trailer trailer-7">
+                    <i class="fa-solid fa-video"></i>
+                    Watch Trailer
+                </a>
+                <div class="film-info"></div>
+            </div>
+            <!-- Video của phần tử phim 7 -->
+            <div class="video-items">
+                <div class="overlay-video"></div>
+                <div class="video-item">
+                    <a href="#!" class="close-icon">
+                        <i class="fa-solid fa-x"></i>
+                    </a>
+                    <iframe class="video-7" width="560" height="315" src="https://www.youtube.com/embed/UXih7EGt_ag?si=FJhYeFko4z4DZp2f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <!-- Phần tử phim 8 -->
+            <div class="film-item">
+                <h2>Bẫy</h2>
+                <img src="./assets/img/film-8.jpg" alt="film-8" class="film-card">
+                <div class="overlay-img"></div>
+                <a href="../Film-information/Film-1/Film-8/film8.html" class="book-ticket">
+                    <i class="fa-solid fa-ticket"></i>
+                    Booking Ticket
+                </a>
+                <a href="#!" class="trailer trailer-8">
+                    <i class="fa-solid fa-video"></i>
+                    Watch Trailer
+                </a>
+                <div class="film-info"></div>
+            </div>
+            <!-- Video của phần tử phim 8 -->
+            <div class="video-items">
+                <div class="overlay-video"></div>
+                <div class="video-item">
+                    <a href="#!" class="close-icon">
+                        <i class="fa-solid fa-x"></i>
+                    </a>
+                    <iframe class="video-8" width="560" height="315" src="https://www.youtube.com/embed/FWFSkCfwDr0?si=B-dNuAJbIMmpQO2I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <!-- Phần tử phim 9 -->
+            <div class="film-item">
+                <h2>Kẻ Trộm Mặt Trăng 4</h2>
+                <img src="./assets/img/film-9.jpg" alt="film-9" class="film-card">
+                <div class="overlay-img"></div>
+                <a href="../Film-information/Film-1/Film-9/film9.html" class="book-ticket">
+                    <i class="fa-solid fa-ticket"></i>
+                    Booking Ticket
+                </a>
+                <a href="#!" class="trailer trailer-9">
+                    <i class="fa-solid fa-video"></i>
+                    Watch Trailer
+                </a>
+                <div class="film-info"></div>
+            </div>
+            <!-- Video của phần tử phim 9 -->
+            <div class="video-items">
+                <div class="overlay-video"></div>
+                <div class="video-item">
+                    <a href="#!" class="close-icon">
+                        <i class="fa-solid fa-x"></i>
+                    </a>
+                    <iframe class="video-9" width="560" height="315" src="https://www.youtube.com/embed/l3oHhZCuTA4?si=b2Jr2x0OURC9BfFs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Khung phim sắp chiếu -->
+    <div class="films-selection  film-selection-2">
+        <div class="film-searcher">
+           <div class="film-genre">
+                <span> 
+                    <span class="line">|</span>
+                    PHIM
+                </span>
+                <span>Sắp chiếu</span>
+           </div>
+           <div class="search-box">
+                <input type="text" class="search-bar search-bar-2" placeholder="Search me">
+                <button class="button-2">Search</button>
+                <span class="button-search"><i class="fa-solid fa-magnifying-glass"></i></span>
+           </div>
+        </div>
+        <!-- Các ô phim -->
+        <div class="films" id="film-upcoming">
+            <!-- Phần tử phim 10 -->
+            <div class="film-item" >
+                <h2>Ma Da</h2>
+                <img src="./assets/img/film-10.jpg" alt="film-10" class="film-card">
+                <div class="overlay-img"></div>
+                <a href="../Film-information/Film-1/Film-10/film10.html" class="book-ticket">
+                    <i class="fa-solid fa-ticket"></i>
+                    Booking Ticket
+                </a>
+                <a href="#!" class="trailer trailer-1">
+                    <i class="fa-solid fa-video"></i>
+                    Watch Trailer
+                </a>
+                <div class="film-info"></div>
+            </div>
+            <!-- Video của phần tử phim 10 -->
+            <div class="video-items">
+                <div class="overlay-video"></div>
+                <div class="video-item">
+                    <a href="#!" class="close-icon close-icon-1">
+                        <i class="fa-solid fa-x"></i>
+                    </a>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/l0E3vhaG9i4?si=w37riBlt0A13ruLI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <!-- Phần tử phim 11 -->
+            <div class="film-item">
+                <h2>Oan Hồn Báo Oán</h2>
+                <img src="./assets/img/film-11.jpg" alt="film-11" class="film-card">
+                <div class="overlay-img"></div>
+                <a href="../Film-information/Film-1/Film-11/film11.html" class="book-ticket">
+                    <i class="fa-solid fa-ticket"></i>
+                    Booking Ticket
+                </a>
+                <a href="#!" class="trailer trailer-2">
+                    <i class="fa-solid fa-video"></i>
+                    Watch Trailer
+                </a>
+                <div class="film-info"></div>
+            </div>
+            <!-- Video của phần tử phim 11 -->
+            <div class="video-items">
+                <div class="overlay-video"></div>
+                <div class="video-item">
+                    <a href="#!" class="close-icon close-icon-2">
+                        <i class="fa-solid fa-x"></i>
+                    </a>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/fPsqXASE8-Q?si=V-_e60fCpSYveDVm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <!-- Phần tử phim 12 -->
+            <div class="film-item">
+                <h2>Ba Đêm Kinh Hoàng</h2>
+                <img src="./assets/img/film-12.jpg" alt="film-12" class="film-card">
+                <div class="overlay-img"></div>
+                <a href="../Film-information/Film-1/Film-12/film12.html" class="book-ticket">
+                    <i class="fa-solid fa-ticket"></i>
+                    Booking Ticket
+                </a>
+                <a href="#!" class="trailer trailer-3">
+                    <i class="fa-solid fa-video"></i>
+                    Watch Trailer
+                </a>
+                <div class="film-info"></div>
+            </div>
+            <!-- Video của phần tử phim 12 -->
+            <div class="video-items">
+                <div class="overlay-video"></div>
+                <div class="video-item">
+                    <a href="#!" class="close-icon">
+                        <i class="fa-solid fa-x"></i>
+                    </a>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/lHfLDlO8PJs?si=otDGLVOt2WfZd0fl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                 </div>
+            </div>
+            <!-- Phần tử phim 13 -->
+            <div class="film-item">
+                <h2>Mồ Tra Tấn </h2>
+                <img src="./assets/img/film-13.jpg" alt="film-13" class="film-card">
+                <div class="overlay-img"></div>
+                <a href="../Film-information/Film-1/Film-13/film13.html" class="book-ticket">
+                    <i class="fa-solid fa-ticket"></i>
+                    Booking Ticket
+                </a>
+                <a href="#!" class="trailer trailer-4">
+                    <i class="fa-solid fa-video"></i>
+                    Watch Trailer
+                </a>
+                <div class="film-info"></div>
+            </div>
+            <!-- Video của phần tử phim 13 -->
+            <div class="video-items">
+                <div class="overlay-video"></div>
+                <div class="video-item">
+                    <a href="#!" class="close-icon">
+                        <i class="fa-solid fa-x"></i>
+                    </a>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/KKKK8qptIJc?si=r9U0so172WxmigSj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <!-- Phần tử phim 14 -->
+            <div class="film-item">
+                <h2>BlueLock</h2>
+                <img src="./assets/img/film-14.jpg" alt="film-14" class="film-card">
+                <div class="overlay-img"></div>
+                <a href="../Film-information/Film-1/Film-14/film-14.html" class="book-ticket">
+                    <i class="fa-solid fa-ticket"></i>
+                    Booking Ticket
+                </a>
+                <a href="#!" class="trailer trailer-5">
+                    <i class="fa-solid fa-video"></i>
+                    Watch Trailer
+                </a>
+                <div class="film-info"></div>
+            </div>
+            <!-- Video của phần tử phim 14 -->
+            <div class="video-items">
+                <div class="overlay-video"></div>
+                <div class="video-item">
+                    <a href="#!" class="close-icon">
+                        <i class="fa-solid fa-x"></i>
+                    </a>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/dUhRCIHIJUg?si=NtSjxVnsuYcgQ9Nd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <!-- Phần tử phim 15 -->
+            <div class="film-item">
+                <h2>Cô Dâu Hào Môn </h2>
+                <img src="./assets/img/film-15.kpg.jpg" alt="film-15" class="film-card">
+                <div class="overlay-img"></div>
+                <a href="../Film-information/Film-1/Film-15/film15.html" class="book-ticket">
+                    <i class="fa-solid fa-ticket"></i>
+                    Booking Ticket
+                </a>
+                <a href="#!" class="trailer trailer-6">
+                    <i class="fa-solid fa-video"></i>
+                    Watch Trailer
+                </a>
+                <div class="film-info"></div>
+            </div>
+            <!-- Video của phần tử phim 15 -->
+            <div class="video-items">
+                <div class="overlay-video"></div>
+                <div class="video-item">
+                    <a href="#!" class="close-icon">
+                        <i class="fa-solid fa-x"></i>
+                    </a>
+                    <iframe class="video-6" width="560" height="315" src="https://www.youtube.com/embed/x_gGMJOppAo?si=wMS2LBHNHqqdB6MN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <!-- Phần tử phim 16 -->
+            <div class="film-item">
+                <h2>Cậu Bé Dũng Sĩ Yakari</h2>
+                <img src="./assets/img/film-16.jpg" alt="film-16" class="film-card">
+                <div class="overlay-img"></div>
+                <a href="../Film-information/Film-1/Film-16/film16.html" class="book-ticket">
+                    <i class="fa-solid fa-ticket"></i>
+                    Booking Ticket
+                </a>
+                <a href="#!" class="trailer trailer-7">
+                    <i class="fa-solid fa-video"></i>
+                    Watch Trailer
+                </a>
+                <div class="film-info"></div>
+            </div>
+            <!-- Video của phần tử phim 16 -->
+            <div class="video-items">
+                <div class="overlay-video"></div>
+                <div class="video-item">
+                    <a href="#!" class="close-icon">
+                        <i class="fa-solid fa-x"></i>
+                    </a>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/KnDFOyIhMsQ?si=1Nx41EqkXjMIJuxo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <!-- Phần tử phim 17 -->
+            <div class="film-item">
+                <h2>Thảm Họa Trên Cầu</h2>
+                <img src="./assets/img/film-17.jpg" alt="film-17" class="film-card">
+                <div class="overlay-img"></div>
+                <a href="../Film-information/Film-1/Film-17/film17.html" class="book-ticket">
+                    <i class="fa-solid fa-ticket"></i>
+                    Booking Ticket
+                </a>
+                <a href="#!" class="trailer trailer-8">
+                    <i class="fa-solid fa-video"></i>
+                    Watch Trailer
+                </a>
+                <div class="film-info"></div>
+            </div>
+            <!-- Video của phần tử phim 17 -->
+            <div class="video-items">
+                <div class="overlay-video"></div>
+                <div class="video-item">
+                    <a href="#!" class="close-icon">
+                        <i class="fa-solid fa-x"></i>
+                    </a>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/wuDaOwKCDmc?si=oT2uf-jKIhUbacd7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <!-- Phần tử phim 18 -->
+            <div class="film-item">
+                <h2>Vũ Điệu Chiến Thắng</h2>
+                <img src="./assets/img/film-18.jpg" alt="film-18" class="film-card">
+                <div class="overlay-img"></div>
+                <a href="../Film-information/Film-1/Film-18/film18.html" class="book-ticket">
+                    <i class="fa-solid fa-ticket"></i>
+                    Booking Ticket
+                </a>
+                <a href="#!" class="trailer trailer-9">
+                    <i class="fa-solid fa-video"></i>
+                    Watch Trailer
+                </a>
+                <div class="film-info"></div>
+            </div>
+            <!-- Video của phần tử phim 18 -->
+            <div class="video-items">
+                <div class="overlay-video"></div>
+                <div class="video-item">
+                    <a href="#!" class="close-icon">
+                        <i class="fa-solid fa-x"></i>
+                    </a>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/L7KB3DGkwb8?si=_p4sCmm71dEColNP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Góc điện ảnh -->
+     <div class="box" id="film-corner">
+        <div class="box-bar">
+            <span class="line">|</span>
+            <span> 
+                CINEMA CORNER
+            </span>
+            <span>Movie review </span>
+            <span>Movie Blog</span>
+        </div>
+        <div class="box-film">
+            <div class="box-main-film">
+                <img src="./assets/img/main-film.jpg" alt="main-film">
+                <a href="#!">[Review] Thám Tử Lừng Danh Conan Ngôi Sao 5 Cánh 1 Triệu Đô: Bí Ẩn Lớn Nhất Về Kaito Kid </a>
+                <!-- Reaction -->
+                <div class="reaction">
+                    <a href="#!" class="like-reac">
+                        100
+                        <i class="fa-solid fa-thumbs-up"></i>
+                    </a>
+                    <a href="#!" class="seen-reac">
+                        234
+                        <i class="fa-solid fa-eye"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="box-other-film">
+                <!-- Review 1 -->
+                <div class="box-other-film-1">
+                    <img src="./assets/img/film-other-1.jpg" alt="film-other-1">
+                    <a href="#!">[Review] Deadpool & Wolverine: Tri Ân 20 Năm X-Men Theo Phong Cách Bẩn Bựa</a>
+                </div>
+                <!-- Review 2 -->
+                <div class="box-other-film-2">
+                    <img src="./assets/img/film-other-2.jpg" alt="film-other-2">
+                    <a href="#!">[Review] My Boo: "Tình Người Duyên Ma" Phiên Bản Tươi Sáng</a>
+                </div>
+                <!-- Review 3 -->
+                <div class="box-other-film-3">
+                    <img src="./assets/img/film-other-3.jpg" alt="film-other-13">
+                    <a href="#!">[Review] Despicable Me 4: Minions - "Vô Tri" Hưởng Tỉ Đô?</a>
+                </div>
+            </div>
+        </div>
+     </div>
+     <!-- Advertisement -->
+    <div class="advertisement-wrapper" id="film-ad">
+        <div class="advertisement-bar">
+            <span class="line">|</span>
+            <span> 
+               PROMOTIONAL NEWS
+            </span>
+        </div>
+        <div class="advertisement-container">
+            <div class="advertisement-item">
+                <img src="./assets/img/ad-1.jpg" alt="">
+                <div class="info">
+                    Tưu Deal BornPink - Ưu Đãi Linh Đình
+                </div>
+            </div>
+            <div class="advertisement-item">
+                <img src="./assets/img/ad-2.jpg" alt="">
+                <div class="info">
+                    Mưa Quà Tặng Cho <br> Thành Viên WuysNoat Cinema
+                </div>
+            </div>
+            <div class="advertisement-item">
+                <img src="./assets/img/ad-3.jpg" alt="">
+                <div class="info">
+                    U22 Vui Vẻ - Bắp Nước Siêu Hạt Dẻ
+                </div>
+            </div>
+            <div class="advertisement-item">
+                <img src="./assets/img/ad-4.jpg" alt="">
+                <div class="info">
+                    Ngất Ngây Cùng Bánh Phồng Dế Rec Rec
+                </div>
+            </div>
+            <div class="advertisement-item">
+                <img src="./assets/img/ad-5.jpg" alt="">
+                <div class="info">
+                    Ngày Tri Ân Của WuysNoat Cinema
+                </div>
+            </div>
+            <div class="advertisement-item">
+                <img src="./assets/img/ad-6.jpg" alt="">
+                <div class="info">
+                    Giảm 10K Dành Tặng Các Stars!
+                </div>
+            </div>
+            <div class="advertisement-item">
+                <img src="./assets/img/ad-1.jpg" alt="">
+                <div class="info">
+                    Tưu Deal BornPink - Ưu Đãi Linh Đình
+                </div>
+            </div>
+            <div class="advertisement-item">
+                <img src="./assets/img/ad-2.jpg" alt="">
+                <div class="info">
+                    Mưa Quà Tặng Cho <br> Thành Viên WuysNoat Cinema
+                </div>
+            </div>
+            <div class="advertisement-item">
+                <img src="./assets/img/ad-3.jpg" alt="">
+                <div class="info">
+                    U22 Vui Vẻ - Bắp Nước Siêu Hạt Dẻ
+                </div>
+            </div>
+            <div class="advertisement-item">
+                <img src="./assets/img/ad-4.jpg" alt="">
+                <div class="info">
+                    Ngất Ngây Cùng Bánh Phồng Dế Rec Rec
+                </div>
+            </div>
+            <div class="advertisement-item">
+                <img src="./assets/img/ad-5.jpg" alt="">
+                <div class="info">
+                    Ngày Tri Ân Của WuysNoat Cinema
+                </div>
+            </div>
+            <div class="advertisement-item">
+                <img src="./assets/img/ad-6.jpg" alt="">
+                <div class="info">
+                    Giảm 10K Dành Tặng Các Stars!
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    <!-- Footer -->
+     <footer>
+        <div class="content">
+            <div class="column">
+                <h4>INTRODUCE</h4>
+                <ul>
+                    <li>
+                        <a href="#!">
+                            Về chúng tôi
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!">
+                            Thỏa Thuận Sử Dụng
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!">
+                            Quy Chế Hoạt Động
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!">
+                            Chính Sách Bảo Mật
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="column">
+                <h4>CINEMA CORNER</h4>
+                <ul>
+                   <li>
+                    <a href="#!">
+                        Thể Loại Phim
+                    </a>
+                   </li>
+                   <li>
+                    <a href="#!">
+                        Bình Luận Phim
+                    </a>
+                   </li>
+                   <li>
+                    <a href="#!">
+                        Blog Điện Ảnh
+                    </a>
+                   </li>
+                   <li>
+                    <a href="#!">
+                        Phim Hay Tháng
+                    </a>
+                   </li>
+                   <li>
+                    <a href="#!">
+                        Phim IMAX
+                    </a>
+                   </li>
+                </ul>
+            </div>
+            <div class="column">
+                <h4>SUPPORTING</h4>
+                <ul>
+                   <li>
+                    <a href="#!">
+                        Góp Ý
+                    </a>
+                   </li>
+                   <li>
+                    <a href="#!">
+                        Sale & Services
+                    </a>
+                   </li>
+                   <li>
+                    <a href="#!">
+                        Rạp / Giá Vé
+                    </a>
+                   </li>
+                   <li>
+                    <a href="#!">
+                        Tuyển Dụng
+                    </a>
+                   </li>
+                   <li>
+                    <a href="#!">
+                        FAQ
+                    </a>
+                   </li>
+                </ul>
+            </div>
+            <div class="column">
+                <h4>OUR CINEMA</h4>
+                <img src="./assets/img/logo.png" alt="WUYSNOAT">
+                <div class="social">
+                    <img src="./assets/img/social icon.svg" alt="">
+                </div>
+            </div>
+        </div>
+     </footer>
+    
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Javascript -->
+    <script src="./main.js"></script>
+</body>
+</html>
