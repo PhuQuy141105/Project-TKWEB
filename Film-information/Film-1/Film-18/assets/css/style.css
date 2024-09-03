@@ -1,0 +1,656 @@
+* {
+    font-family: Poppins;
+    box-sizing: border-box;
+}
+
+html,body {
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Logo ảnh */
+.logo-brand {
+    width: 200px;
+    user-select: none;
+}
+
+/* Header */
+header {
+    background-color:#000336;
+    /* background-color: transparent; */
+    /* backdrop-filter: blur(20px); */
+    position: sticky;
+    top: -5px;
+    left: 0px;
+    width: 100%;
+    height: 160px;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3;
+}
+/* Navigation */ 
+nav {
+    font-family: Poppins;
+    margin-left: auto;
+    display: flex;
+    position: relative;
+}
+.nav a {
+    position: relative;
+    font-size: 1.4rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding-left: 40px;
+    z-index: 2;
+    margin-top: 18px
+}
+/* Hiệu ứng cho phần navigation */
+.nav a:nth-child(1):hover~span {
+    left: 0;
+}
+.nav a:nth-child(2):hover~span {
+    left: 103px;
+    width: 99.97px;
+}
+
+.nav a:nth-child(2):hover {
+   background-clip: text;
+   color: transparent;
+   background-color: #8EC5FC;
+   background-image: linear-gradient(307deg, #8EC5FC 0%, #E0C3FC 50%, #f5ed66 100%);
+   font-weight: 600;
+}
+
+.nav a:nth-child(3):hover~span {
+    left: 207px;
+    width: 84.97px;
+}
+
+.nav a:nth-child(3):hover {
+   color: transparent;
+   background-clip: text;
+   background-color: #8EC5FC;
+   background-image: linear-gradient(307deg, #8EC5FC 0%, #E0C3FC 50%, #f5ed66 100%);
+   font-weight: 600;
+}
+.nav a:nth-child(4):hover~span {
+    left: 296px;
+    width: 92.97px;
+}
+
+.nav a:nth-child(4):hover {
+    color: transparent;
+    background-clip: text;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(307deg, #8EC5FC 0%, #E0C3FC 50%, #f5ed66 100%);
+    font-weight: 600;
+}
+/* Tạo thanh trượt cho phần navigation */
+.nav span {
+    padding-bottom: 50px;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: 80px;
+    height: 39px;
+    border-radius: 8px;
+    background-color: #57acdf;
+    background-image: linear-gradient(160deg, #57acdf 0%, #162265 100%);
+    transition: .5s ease;
+}
+/* Nút login  */
+.nav .btn-login {
+    width: 100px;
+    height: 42px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.4rem;
+    color: #fff;
+    font-weight: 530;
+    margin: 4px 0 0 40px;
+    transition: 0.5s;
+    z-index: 1;
+    transition: 0.5s;
+    font-weight: 500;
+}
+
+.nav .btn-login:hover {
+    background-color: #57acdf;
+    background-image: linear-gradient(160deg, #57acdf 0%, #162265 100%);
+}
+/* Review*/
+/* Box-film */
+.box-film {
+    font-family: "Montserrat", sans-serif;
+    background-image: url(../img/film-18.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    position: relative; 
+}
+
+/* Container */
+.container .img-film img {
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.5) 0px 50px 100px -20px, rgba(0, 0, 0, 0.5) 0px 30px 60px -30px, rgba(10, 37, 64, 0.5) 0px -2px 6px 0px inset;
+}
+.container {
+    padding-top: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    position: relative;
+}
+
+.container .info-film h1 {
+    font-size: 2.8rem;
+    margin-bottom: 30px;
+}
+
+.container .info-film .genre {
+    display: flex;
+}
+
+.container .info-film .genre p:not(:first-child) {
+    margin-left: 20px
+
+}
+
+.container .info-film {
+    font-size: 1.6rem;
+    margin-left: 30px;
+    /* margin-bottom: 30px; */
+    height: 304px;
+    width: 800px;
+    color: white;
+    text-align: justify;
+
+}
+
+.container .info-film p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container .info-film > .time {
+    margin-top: 20px;
+}
+
+.container .info-film > .info {
+    margin-top: 40px;
+    line-height: 20px;
+}
+
+.container .info-film > .censor {
+    margin-top: 20px;
+    background-color: rgba(255,0,0,0.5);
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.container .info-film > .others {
+    margin-top: 20px;
+    display: flex;
+}
+
+.container .info-film > .others a {
+    text-decoration: none;
+    color: white
+
+}
+
+.container .info-film > .others a:first-child {
+    text-decoration: underline;
+    margin-top: 10px;
+}
+
+.container .info-film > .others a:nth-child(2) {
+    margin-left: 50px;
+    border: 2px orange solid;
+    padding: 10px;
+    color: orange;
+    border-radius: 20px;
+}
+
+.container .info-film > .others a:nth-child(2):hover {
+    transform: scale(1.1);
+}
+
+.container .info-film > .actors {
+   margin-top: 15px;
+}
+/* Overlay */
+.overlay {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(3px);
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+}
+/* Choose Time */ 
+.choose-time {
+    width: 100%;
+    height: 150px;
+    background-color: white;
+    display: flex;
+    /* padding: 30px; */
+    justify-content: center;
+    align-items: center;
+}
+
+.choose-time .time-item {
+    text-decoration: none;
+    color: #0d115d;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-left: 90px;
+    font-size: 1.8rem;
+    height: 100%;
+    padding: 30px 30px;
+    transition: 0.3s;
+}
+
+.choose-time .time-item.selected {
+    background-color: #57acdf;
+    background-image: linear-gradient(160deg, #57acdf 0%, #162265 100%);
+    color: white
+
+}
+
+.choose-time .time-item .date {
+    margin: 10px 0;
+    font-size: 3rem;
+    font-weight: 800;
+}
+/* Chóose hour */
+.choose-hour {
+    padding-top: 20px;
+   
+    background-color: #000336;
+    width: 100%;
+    height: 500px;
+}
+
+.choose-hour .remind {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f3f313;
+    font-weight: 600;
+    height: 70px;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+}
+.hour-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.hour-item a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    font-weight: 700;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 12px 80px;
+    transition: 0.3s;
+}
+.hour-item a:hover {
+    transform: translateY(-20px);
+    background-color: white;
+    color:#000336;
+    box-shadow: rgba(244, 243, 243, 0.595) 0px 54px 55px, rgba(255, 255, 255, 0.727) 0px -12px 30px, rgb(202, 216, 231) 0px 4px 6px, rgb(117, 132, 243) 0px 12px 13px, rgb(255, 255, 255) 0px -3px 5px;
+}
+
+/* Rating */
+.rating-box {
+    font-family: Poppins;
+    width: 100%;
+    height: 579px;
+    background-color: white;
+    padding-top: 40px
+}
+
+.rating-bar {
+    margin-left: 100px
+}
+
+.rating-bar .introduction {
+    font-size: 3.6rem;
+    margin-left: 10px;
+    font-weight: 800;
+    color: transparent;
+    background-clip: text ;
+    background-color: #57acdf;
+    background-image: linear-gradient(160deg, #57acdf 0%, #162265 100%);
+}
+
+.rating-bar .line {
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: #dcd430
+}
+
+.rating-card {
+    border-radius: 10px;
+    width: 900px;
+    height: 350px;
+    /* background-color: red; */
+    margin: 50px auto;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.rating-card h3 {
+    font-size: 3.7rem;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 33px;
+    color: transparent;
+    background-clip: text;
+    background-color: #57acdf;
+    background-image: linear-gradient(160deg, #57acdf 0%, #162265 100%);
+}
+
+.rating {
+    display: flex;
+    margin: 40px 20px 20px 30px;
+    align-items: center;
+}
+/* General Rating */
+.general-rating {
+    margin-left: 60px;
+}
+
+.general-rating .number {
+    font-size: 7rem;
+    text-align: center;
+    font-weight: 700;
+    color: transparent;
+    background-clip: text;
+    background-color: #57acdf;
+    background-image: linear-gradient(160deg, #57acdf 0%, #162265 100%);
+}
+
+.general-rating .star {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+    font-size: 2rem;
+    color: #dcd430;
+}
+
+.general-rating .star i:not(:first-child) {
+    margin-left: 15px;
+}
+
+.general-rating .people {
+    margin-top: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: grey;
+}
+
+.general-rating .people i {
+    font-size: 1.4rem;
+    margin-right: 5px;
+}
+
+/* Each Rating */
+.each-rating {
+    margin: 0 30px 0 160px;
+    width: 100%;
+}
+
+.each-rating-items li {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+}
+
+.each-rating-items li i {
+    color: #dcd430;
+}
+
+.each-rating-items li .percent {
+    font-weight: 400;
+    color: grey;
+    margin-left: 10px;
+}
+
+.each-rating-items li .process {
+    width: 100%;
+    height: 20px;
+    display: inline-block;
+    border-radius: 3px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    margin-left: 10px;
+    position: relative;
+}
+@keyframes process {
+    
+    0% {
+        width: 0px;
+    }
+
+    
+}
+.each-rating-items li .process .process-100 {
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 20px;
+    border-radius: 3px;
+    background-color: #57acdf;
+    animation: process 5s infinite ease-out;
+    background-image: linear-gradient(160deg, #57acdf 0%, #162265 100%);
+}
+
+.each-rating-items li .process .process-80 {
+    position: absolute;
+    display: inline-block;
+    width: 80%;
+    height: 20px;
+    border-radius: 3px;
+    background-color: #57acdf;
+    animation: process 5s infinite ease-out;
+    background-image: linear-gradient(160deg, #57acdf 0%, #162265 100%);
+}
+
+.each-rating-items li .process .process-65 {
+    position: absolute;
+    display: inline-block;
+    width: 65%;
+    height: 20px;
+    border-radius: 3px;
+    background-color: #57acdf;
+    animation: process 5s infinite ease-out;
+    background-image: linear-gradient(160deg, #57acdf 0%, #162265 100%);
+}
+
+.each-rating-items li .process .process-30 {
+    position: absolute;
+    display: inline-block;
+    width: 30%;
+    height: 20px;
+    border-radius: 3px;
+    background-color: #57acdf;
+    animation: process 5s infinite ease-out;
+    background-image: linear-gradient(160deg, #57acdf 0%, #162265 100%);
+}
+
+.each-rating-items li .process .process-10 {
+    position: absolute;
+    display: inline-block;
+    width: 10%;
+    height: 20px;
+    border-radius: 3px;
+    background-color: #57acdf;
+    animation: process 5s infinite ease-out;
+    background-image: linear-gradient(160deg, #57acdf 0%, #162265 100%);
+}
+
+/* Customer Review */
+.review-list {
+    font-family: Poppins;
+    background-color: #000336;
+    padding-top: 40px;
+    width: 100%;
+    height: 600px;
+    /* margin: 15px; */
+    position: relative;
+    
+}
+
+.review-box {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    /* overflow: hidden; */
+    justify-content: center;
+    align-items: center;
+    transition:  0.5s ; 
+}
+.review-bar {
+    margin-left: 100px
+}
+
+.review-bar .introduction {
+    font-size: 3.6rem;
+    margin-left: 10px;
+    font-weight: 800;
+    color: white;
+}
+
+.review-bar .line {
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: #dcd430
+}
+
+.review-list .review-card {
+    background-color: white;
+    width: 450px;
+    height: 318px;
+    align-self: center;
+    margin-left: 40px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
+}
+
+.decoration i {
+    font-size: 4rem;
+    margin: 20px;
+    color: #162265;
+}
+
+.review-card .review {
+    padding: 5px 20px;
+    font-size: 1.4rem;
+    line-height: 2;
+    font-family: sans-serif;
+    text-align: justify;
+}
+
+.review-card .customer-info {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.customer-info .info .name-customer {
+    font-size: 2.3rem;
+    font-weight: 800;
+    background-clip: text;
+    background-color: #57acdf;
+    background-image: linear-gradient(160deg, #57acdf 0%, #162265 100%);
+    color: transparent;
+    /* width: 107px; */
+    height: 25px;
+}
+
+.customer-info .info .age-customer {
+    margin-top: 10px;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #162265;
+}
+
+.customer-info .info .rating-customer {
+    margin-top: 10px;
+    font-size: 1.7rem;
+    background-clip: text;
+    background-color: #57acdf;
+    background-image: linear-gradient(160deg, #57acdf 0%, #162265 100%);
+    color: transparent;
+}
+
+.ava-customer img {
+    width: 70px;
+    outline: 4px solid #162265;
+    border: 2px solid white;
+    border-radius: 50%;
+    /* background-color: #57acdf; */
+    /* border-image: linear-gradient(160deg, #57acdf 0%, #162265 100%); */
+    margin-right: 20px 
+}
+
+.review-list .btns {
+    font-size: 4rem;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    padding: 0 20px;
+}
+
+.btns .btn {
+    background: white;
+    width: 50px;
+    text-align: center;
+    border-radius: 50%;
+    height: 50px;
+    line-height: 50px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.btns .btn:hover {
+    transform: scale(1.1);
+}
+
+.btns i {
+    color: transparent;
+    background-color: #57acdf;
+    background-image: linear-gradient(160deg, #57acdf 0%, #162265 100%);
+    background-clip: text;
+}
